@@ -1,0 +1,22 @@
+.contanier{
+  display: flex;
+  padding: 30px;
+  flex-flow: wrap;
+  .modules{
+    margin: 20px;
+    border: 1px solid #ccc;
+    &__title{
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #ccc;
+    }
+    &__box{
+      width: 350px;
+      height: 350px;
+      padding: 10px;
+      .chart{
+        height: 100%;
+      }
+    }
+  }
+}

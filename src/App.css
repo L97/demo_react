@@ -1,6 +1,7 @@
 @import 'antd/dist/antd.css';
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -36,4 +37,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+.menu{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.menu .ant-menu{
+  height: 100%;
+}
+.menu .expand{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  width: 25px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-left: 0;
+  cursor: pointer;
+  line-height: 40px;
+}
+.menu .expand:hover{
+  border-color: #40a9ff;
+}
+.right{
+  width: 100%;
 }
